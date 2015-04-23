@@ -7,8 +7,8 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn match   pdfpcSectionHeader "^[file]$\|^[end_user_slide]$\|^[notes]$"
+syn match   pdfpcSectionHeader "^\[file\]$\|^\[end_user_slide\]$\|^\[notes\]$"
 syn match   pdfpcSlideId "^### \d\+$"
 
-highlight link pdfpcSectionHeader     Special
+highlight link pdfpcSectionHeader     Keyword
 highlight link pdfpcSlideId           Constant
